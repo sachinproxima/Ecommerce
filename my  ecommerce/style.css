@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+:root {
+    font-family: "Urbanist", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    --buttonColor: #2a2c30;
+    --secondaryColor: #4b4f56;
+    --borderColor: #e3eaf0;
+    --backgroundColor: #f7f7f7;
+    --backgroundSecondary: #fefefe;
+    --textColor: #1e1f23;
+    --anchorColor: #535bf2;
+    --main-color: #535bf2;
+    --supporting-color: #ebf3fe;
+    --glow-color: hsl(186, 91%, 4%);
+  }
+
+
+.header{
+
+height: 70px;
+/* background-color: red; */
+width: 100%;
+
+display: flex;
+align-items: center;
+border-bottom: 1px solid grey;
+
+
+}
+.header .logoContainer{
+
+height: 90%;
+width: 8%;
+/* background-color: aquamarine; */
+margin-left: 30px;
+margin-right: 10px;
+
+
+
+}
+
+
+.header .logoContainer a img{
+height: 100%;
+width: 100%;
+
+
+}
+
+
+.header .navigation{
+
+height: 100%;
+width: 90%;
+/* background-color: red; */
+
+position: relative;
+
+
+display: flex;
+/* justify-content: center; */
+align-items: center;
+
+}
+.header .navigation .inputBox{
+
+height: 40px;
+width: 50%;
+/* background-color: yellow; */
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+border-radius: 10px;
+outline: none;
+padding-left: 35px;
+font-size: 17px;
+border: none;
+
+
+}
+
+.header .navigation a .fa-magnifying-glass{
+
+font-size: 18px;
+/* font-weight: 500; */
+position: absolute;
+top: 25px;
+left: 5px;
+color: #212121;
+}
+.header .navigation  ul{
+
+height: 100%;
+width: 31%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.header .navigation  ul a {
+
+
+    text-decoration: none;
+    color: #212121;
+}
+.header .navigation  ul a li{
+
+    list-style: none;
+   
+}
+.header .navigation  .accountLog{
+    /* background-color: aquamarine; */
+    height: 80%;
+width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10px;
+    
+}
+.header .navigation .cart{
+
+font-size: 20px;
+margin-left: 16px;
+color: #1e1f23;
+
+}
+#cart-value{
+
+position: absolute;
+top: 5px;
+right: 37px;
+font-size: 12px;
+color: red;
+
+
+
+
+}
+
+
+/* body part start here */
+
+
+.bodyContent{
+
+/* background-color: #212121; */
+height: 350px;
+width: 100%;
+
+display: flex;
+
+
+
+}
+
+.bodyContent .categoryLeft{
+
+    height: 95%;
+    width: 30%;
+    /* background-color: bisque; */
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+
+
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    gap: 3px;
+
+
+}
+.bodyContent .categoryRight{
+    height: 95%;
+    width: 70%;
+background-color: blueviolet;
+margin: 5px 10px;
+border-radius: 20px;
+
+
+
+    
+}
+
+.bodyContent .categoryLeft .subCategory{
+/* background-color: rgb(255, 255, 255); */
+/* border-radius: 10px; */
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+
+
+}
+
+.bodyContent .categoryLeft .subCategory .imgSlot{
+/* background-color: aqua; */
+height: 80%;
+width: 100%;
+
+}
+.bodyContent .categoryLeft .subCategory .imgSlot img{
+
+height: 100%;
+width: 100%;
+/* background-size: cover; */
+
+}
+.bodyContent .categoryLeft .subCategory p{
+    text-align: center;
+
+
+}
+.bodyContent .categoryRight img{
+
+
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/* <!-- second body paert start here --> */
+
+.miniScroll{
+
+
+height: 120px;
+width: 94%;
+margin: 50px auto;
+/* background-color: aqua; */
+
+display: grid;
+gap: 10px;
+grid-template-rows: repeat(1,120px);
+grid-template-columns: repeat(7,1fr);
+
+}
+.miniScroll .miniScrollContent{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+/* background-color: bisque; */
+/* border-radius: 5px; */
+
+
+
+}
+.miniScroll .miniScrollContent img{
+
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+/**** Our Home product section  Starts ***/
+#productContainer{
+
+/* background-color: #212121; */
+width: 94%;
+
+margin: 5px auto;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 15px;
+
+
+
+
+}
+
+.cards{
+
+background-color: #ffffff;
+
+
+
+
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.information{
+
+  padding: 1rem;
+}
+
+.imageContainer{
+
+height: 100%;
+width: 100%;
+margin: 10px;
+/* background-color: green; */
+
+}
+
+.productName{
+
+  margin-bottom: 5px;
+}
+
+
+.productImage{
+height: 90%;
+width: 90%;
+
+
+}
+
+.productPriceElement{
+
+display: flex;
+gap: 15px;
+margin: 10px 0;
+
+}
+
+.productActualPrice{
+  text-decoration: line-through;
+
+
+}
+.productStockElement{
+
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.productQuantityElement{
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+}
+.stockElement{
+
+  display: flex;
+  gap: 10px;
+  border: 1px solid grey;
+  
+margin: 10px 0;
+  border-radius: 5px;
+}
+
+.productQuantity{
+
+  padding: 5px;
+}
+.cartIncrement{
+
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+border-left: 1px solid grey;
+width: 40px;
+
+
+}
+
+.cartDecrement{
+
+
+  border: none;
+  background-color: transparent;
+  padding: 6px;
+  border-right: 1px solid grey;
+  width: 40px;
+
+}
+
+.productRating{
+
+  font-size: 15px;
+  color: gold;
+  
+}
+
+.productRating{
+
+  margin-bottom: 5px;
+}
+
+.add-to-cart-button{
+
+  height: 50px;
+  width: 120px;
+  background-color: #1e1f23;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+
+  margin: 10px 0;
+
+  transition: all 0.3s linear;
+}
+
+.fa-cart-shopping{
+
+
+  font-size: 16px;
+  color: #fff;
+  margin-right: 3px;
+}
+
+.productDescription{
+
+  margin-bottom: 5px;
+}
+
+.add-to-cart-button:hover{
+
+  background-color: #fff;
+  border: 1px solid black;
+  color: #1e1f23;
+}
+
+.add-to-cart-button:hover .fa-cart-shopping{
+
+ 
+  color: #1e1f23;
+}
+
+
+
+
+
+
+/* style for addtocart html section */
+
+
+.cartContainer{
+
+width: 70%;
+border-radius: 10px;
+
+  border: 2px  solid gray;
+  display: grid;
+  grid-template-rows: repeat(1,1fr);
+margin: 10px 50px;
+border-bottom: 0;
+}
+
+.cartContainer .carts{
+border-radius: 10px;
+
+
+  width: 100%;
+  height:150px;
+
+  border-bottom: 1px solid grey;
+
+
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 60px;
+  align-items: center;
+position: relative;
+
+}
+
+.cartContainer .carts .imgcontainer{
+
+
+height: 85%;
+width: 20%;
+/* background-color: #212121; */
+
+}
+
+.cartContainer .carts .imgcontainer img{
+  height: 100%;
+  width: 100%;
+}
+
+.removeBtn{
+  height: 50px;
+  width: 120px;
+  background-color: #1e1f23;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+
+  margin: 10px 0;
+
+  transition: all 0.3s linear;
+  position: absolute;
+  right: 30px;
+  top: 37px;
+
+
+
+
+}
+
+.removeBtn:hover{
+
+  background-color: #fff;
+  border: 1px solid black;
+  color: #1e1f23;
+}
+
+/* .removeBtn:hover .fa-cart-shopping{
+
+ 
+  color: #1e1f23;
+} */
+
